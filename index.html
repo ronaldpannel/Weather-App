@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h3 class="header">Weather App</h3>
+      <form action="submit">
+        <input
+          type="text"
+          class="cityInput"
+          id="cityInput"
+          placeholder="Enter City"
+        />
+        <input type="submit" value="Get Weather" />
+      </form>
+      <div id="weatherData">
+        <div class="locationContainer">
+          <div class="country"> <span id="country"></span></div>
+          <div class="city"><span id="city"></span></div>
+        </div>
+
+        <div class="icon" id="icon">
+          <!-- <img
+            src="http://openweathermap.org/img/wn/01d.png"
+            alt="weather icon"
+          /> -->
+        </div>
+        <div class="temp" id="temp"></div>
+        <div class="description" id="description"></div>
+        <div class="details">
+          <div id="feelsLike"></div>
+          <div id="humidity"></div>
+          <div id="windSpeed"></div>
+        </div>
+      </div>
+      <p>Powered Open Weather Map</p>
+    </div>
+
+    <script src="index.js" refer></script>
+  </body>
+</html>
